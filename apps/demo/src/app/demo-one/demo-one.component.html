@@ -1,5 +1,68 @@
-<h1>Demo 1 - Observables</h1>
+<h1>Observable demo's</h1>
 
-<pre><code #code class="typescript">
-  {{ demo1Code }}
-</code></pre>
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Creating an observable based on a timer
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <section>
+    <pre>
+      <code #code class="typescript">{{ intervalDemoStart }}
+        {{ intervalDemoStop}}
+      </code>
+    </pre>
+
+    <button mat-raised-button (click)="startIntervalDemo()">Start</button>
+    <button mat-raised-button (click)="stopIntervalDemo()">Stop</button>
+  </section>
+</mat-expansion-panel>
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      When stream is finished/closed the observable completes
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <section>
+    <pre>
+      <code #code class="typescript">{{ completeDemoStart }}</code>
+    </pre>
+
+    <button mat-raised-button (click)="startCompleteDemo()">Start</button>
+  </section>
+</mat-expansion-panel>
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      When an error occurs (and it is not catched) the observable completes
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <section>
+    <pre>
+      <code #code class="typescript">{{ errorDemoStart }}</code>
+    </pre>
+
+    <button mat-raised-button (click)="startErrorDemo()">Start</button>
+  </section>
+</mat-expansion-panel>
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Observables are both synchronous and asynchronous
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <section>
+    <pre>
+    <code #code class="typescript">{{ asyncDemoStart }}</code>
+  </pre>
+
+    <button mat-raised-button (click)="startAsyncDemo()">Start</button>
+  </section>
+</mat-expansion-panel>

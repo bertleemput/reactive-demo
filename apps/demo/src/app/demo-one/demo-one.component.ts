@@ -1,62 +1,126 @@
 import {
   Component,
-  OnInit,
-  ViewChild,
   ElementRef,
-  AfterViewInit
-} from '@angular/core';
-import { timer, Observable } from 'rxjs';
+  AfterViewInit,
+  ViewChildren,
+  QueryList
+} from "@angular/core";
+import { timer, Observable, Subscription, throwError, of } from "rxjs";
+import { mergeMap } from "rxjs/operators";
 
-import hljs from 'highlight.js/lib/core';
+import hljs from "highlight.js/lib/core";
 
 @Component({
-  selector: 'reactive-demo-demo-one',
-  templateUrl: './demo-one.component.html',
-  styleUrls: ['./demo-one.component.scss']
+  selector: "reactive-demo-demo-one",
+  templateUrl: "./demo-one.component.html",
+  styleUrls: ["./demo-one.component.scss"]
 })
-export class DemoOneComponent implements OnInit, AfterViewInit {
-  @ViewChild('code')
-  codeElement: ElementRef;
+export class DemoOneComponent implements AfterViewInit {
+  private intervalDemoSubscription: Subscription;
 
-  constructor() {}
+  @ViewChildren("code")
+  codeSnippets: QueryList<ElementRef>;
 
-  demo1Code = `const interval$ = timer(0, 5000);
+  intervalDemoStart = `
+  // Start the timer
+  const interval$ = timer(0, 2000);
 
-  const subscription = interval$.subscribe(x => {
-    console.log('number: ', x);
-  });
+  this.intervalDemoSubscription = interval$.subscribe(data => {
+    console.log("Received: ", data);
+  });`;
+
+  intervalDemoStop = `
+  // Stop the timer
+  if (this.intervalDemoSubscription) {
+    this.intervalDemoSubscription.unsubscribe();
+  }`;
+
+  completeDemoStart = `
+  const interval$ = timer(2000);
+
+  interval$.subscribe({
+    next: data => console.log(data),
+    complete: () => console.log("Observable completed")
+  });`;
+
+  errorDemoStart = `
+  timer(0, 1000)
+    .pipe(mergeMap(x => (x === 3 ? throwError("OOPS") : of(x))))
+    .subscribe({
+      next: data => console.log(data),
+      complete: () => console.log("Observable completed"),
+      error: error => console.error("Error occurred:" + error)
+    });
   `;
 
-  ngOnInit(): void {
-    this.demo1();
-  }
+  asyncDemoStart = `
+  const sequence$ = new Observable(observer => {
+    observer.next(1);
+    observer.next(2);
 
-  private demo1() {
-    const interval$ = timer(0, 5000);
-
-    const subscription = interval$.subscribe(x => {
-      console.log('number: ', x);
+    timer(3000).subscribe(x => {
+      observer.next(3);
+      observer.complete();
     });
+  });
 
-    // button click unsubscribe
+  console.log("Before subscription");
+  sequence$.subscribe(x =>
+    console.log("Data: ", x)
+  );
+  console.log("After subscription");
+  `;
+
+  startIntervalDemo() {
+    const interval$ = timer(0, 2000);
+
+    this.intervalDemoSubscription = interval$.subscribe(data => {
+      console.log("Received: ", data);
+    });
   }
 
-  private demo2() {
+  stopIntervalDemo() {
+    if (this.intervalDemoSubscription) {
+      this.intervalDemoSubscription.unsubscribe();
+    }
+  }
+
+  startCompleteDemo() {
+    const interval$ = timer(2000);
+
+    interval$.subscribe({
+      next: data => console.log(data),
+      complete: () => console.log("Observable completed")
+    });
+  }
+
+  startErrorDemo() {
+    timer(0, 1000)
+      .pipe(mergeMap(x => (x === 3 ? throwError("OOPS") : of(x))))
+      .subscribe({
+        next: data => console.log(data),
+        complete: () => console.log("Observable completed"),
+        error: error => console.error("Error occurred:" + error)
+      });
+  }
+
+  startAsyncDemo() {
     const sequence$ = new Observable(observer => {
       observer.next(1);
       observer.next(2);
 
-      timer(3000, 1000).subscribe(x => {
-        observer.next(x + 3);
+      timer(3000).subscribe(x => {
+        observer.next(3);
+        observer.complete();
       });
     });
 
-    console.log('Before subscription');
-    const subscription = sequence$.subscribe(x => console.log('Receiving', x));
-    console.log('After subscription');
+    console.log("Before subscription");
+    sequence$.subscribe(x => console.log("Data: ", x));
+    console.log("After subscription");
   }
 
   ngAfterViewInit(): void {
-    hljs.highlightBlock(this.codeElement.nativeElement);
+    this.codeSnippets.forEach(x => hljs.highlightBlock(x.nativeElement));
   }
 }
