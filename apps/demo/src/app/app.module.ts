@@ -5,13 +5,17 @@ import { MatButtonModule } from "@angular/material/button";
 
 import { AppComponent } from "./app.component";
 import { RouterModule, Routes } from "@angular/router";
-import { DemoOneComponent } from "./demo-one/demo-one.component";
+import { ObservablesPageComponent } from "./observables-page/observables-page.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { WelcomePageComponent } from "./welcome-page/welcome-page.component";
 
-const routes: Routes = [{ path: "demo-1", component: DemoOneComponent }];
+const routes: Routes = [
+  { path: "observables", component: ObservablesPageComponent },
+  { path: "", component: WelcomePageComponent }
+];
 
 @NgModule({
-  declarations: [AppComponent, DemoOneComponent],
+  declarations: [AppComponent, ObservablesPageComponent, WelcomePageComponent],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),

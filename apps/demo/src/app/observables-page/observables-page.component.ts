@@ -11,11 +11,10 @@ import { mergeMap } from "rxjs/operators";
 import hljs from "highlight.js/lib/core";
 
 @Component({
-  selector: "reactive-demo-demo-one",
-  templateUrl: "./demo-one.component.html",
-  styleUrls: ["./demo-one.component.scss"]
+  templateUrl: "./observables-page.component.html",
+  styleUrls: ["./observables-page.component.scss"]
 })
-export class DemoOneComponent implements AfterViewInit {
+export class ObservablesPageComponent implements AfterViewInit {
   private intervalDemoSubscription: Subscription;
 
   @ViewChildren("code")

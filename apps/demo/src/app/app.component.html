@@ -1,4 +1,15 @@
 <header></header>
 <main>
-  <router-outlet></router-outlet>
+  <nav class="navigation">
+    <ul class="menu">
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/observables">Observables</a></li>
+      <li><a href="#">Subjects</a></li>
+      <li><a href="#">Operators</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
 </main>
