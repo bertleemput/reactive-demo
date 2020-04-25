@@ -9,8 +9,8 @@
 
   <section>
     <pre>
-      <code #code class="typescript">{{ intervalDemoStart }}
-        {{ intervalDemoStop}}
+      <code #code class="typescript">{{ intervalDemoStartCode }}
+        {{ intervalDemoStopCode }}
       </code>
     </pre>
 
@@ -28,7 +28,7 @@
 
   <section>
     <pre>
-      <code #code class="typescript">{{ completeDemoStart }}</code>
+      <code #code class="typescript">{{ completeDemoCode }}</code>
     </pre>
 
     <button mat-raised-button (click)="startCompleteDemo()">Start</button>
@@ -44,7 +44,7 @@
 
   <section>
     <pre>
-      <code #code class="typescript">{{ errorDemoStart }}</code>
+      <code #code class="typescript">{{ errorDemoCode }}</code>
     </pre>
 
     <button mat-raised-button (click)="startErrorDemo()">Start</button>
@@ -53,6 +53,25 @@
 
 <mat-expansion-panel>
   <mat-expansion-panel-header>
+    <mat-panel-title>Observables can be Hot and Cold</mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <section>
+    <ul>
+      <li>Cold: Creates values from "inside" the observable (Unicast)</li>
+      <li>Hot: Creates values from "outside" the observable (Multicast)</li>
+    </ul>
+
+    <pre>
+    <code #code class="typescript">{{ hotColdDemoCode }}</code>
+  </pre>
+
+    <button mat-raised-button (click)="startHotColdDemo()">Start</button>
+  </section>
+</mat-expansion-panel>
+
+<!-- <mat-expansion-panel>
+  <mat-expansion-panel-header>
     <mat-panel-title>
       Observables are both synchronous and asynchronous
     </mat-panel-title>
@@ -60,9 +79,9 @@
 
   <section>
     <pre>
-    <code #code class="typescript">{{ asyncDemoStart }}</code>
+    <code #code class="typescript">{{ asyncDemoCode }}</code>
   </pre>
 
     <button mat-raised-button (click)="startAsyncDemo()">Start</button>
   </section>
-</mat-expansion-panel>
+</mat-expansion-panel> -->

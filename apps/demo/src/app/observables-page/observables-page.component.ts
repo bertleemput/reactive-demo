@@ -5,7 +5,14 @@ import {
   ViewChildren,
   QueryList
 } from "@angular/core";
-import { timer, Observable, Subscription, throwError, of } from "rxjs";
+import {
+  timer,
+  Observable,
+  Subscription,
+  throwError,
+  of,
+  fromEvent
+} from "rxjs";
 import { mergeMap } from "rxjs/operators";
 
 import hljs from "highlight.js/lib/core";
@@ -20,7 +27,7 @@ export class ObservablesPageComponent implements AfterViewInit {
   @ViewChildren("code")
   codeSnippets: QueryList<ElementRef>;
 
-  intervalDemoStart = `
+  intervalDemoStartCode = `
   // Start the timer
   const interval$ = timer(0, 2000);
 
@@ -28,13 +35,13 @@ export class ObservablesPageComponent implements AfterViewInit {
     console.log("Received: ", data);
   });`;
 
-  intervalDemoStop = `
+  intervalDemoStopCode = `
   // Stop the timer
   if (this.intervalDemoSubscription) {
     this.intervalDemoSubscription.unsubscribe();
   }`;
 
-  completeDemoStart = `
+  completeDemoCode = `
   const interval$ = timer(2000);
 
   interval$.subscribe({
@@ -42,7 +49,7 @@ export class ObservablesPageComponent implements AfterViewInit {
     complete: () => console.log("Observable completed")
   });`;
 
-  errorDemoStart = `
+  errorDemoCode = `
   timer(0, 1000)
     .pipe(mergeMap(x => (x === 3 ? throwError("OOPS") : of(x))))
     .subscribe({
@@ -52,7 +59,21 @@ export class ObservablesPageComponent implements AfterViewInit {
     });
   `;
 
-  asyncDemoStart = `
+  hotColdDemoCode = `
+  const cold$ = new Observable(observer => {
+    observer.next(Math.random());
+    observer.complete();
+  });
+
+  cold$.subscribe(data => console.log("Cold 1", data));
+  cold$.subscribe(data => console.log("Cold 2", data));
+
+  const hot$ = fromEvent(document, "mousedown");
+  hot$.subscribe(data => console.log("Hot 1", data));
+  hot$.subscribe(data => console.log("Hot 2", data));
+  `;
+
+  asyncDemoCode = `
   const sequence$ = new Observable(observer => {
     observer.next(1);
     observer.next(2);
@@ -101,6 +122,20 @@ export class ObservablesPageComponent implements AfterViewInit {
         complete: () => console.log("Observable completed"),
         error: error => console.error("Error occurred:" + error)
       });
+  }
+
+  startHotColdDemo() {
+    const cold$ = new Observable(observer => {
+      observer.next(Math.random());
+      observer.complete();
+    });
+
+    cold$.subscribe(data => console.log("Cold 1", data));
+    cold$.subscribe(data => console.log("Cold 2", data));
+
+    const hot$ = fromEvent(document, "mousedown");
+    hot$.subscribe(data => console.log("Hot 1", data));
+    hot$.subscribe(data => console.log("Hot 2", data));
   }
 
   startAsyncDemo() {

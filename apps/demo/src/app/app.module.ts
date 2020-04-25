@@ -8,14 +8,21 @@ import { RouterModule, Routes } from "@angular/router";
 import { ObservablesPageComponent } from "./observables-page/observables-page.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { WelcomePageComponent } from "./welcome-page/welcome-page.component";
+import { SubjectsPageComponent } from "./subjects-page/subjects-page.component";
 
 const routes: Routes = [
+  { path: "subjects", component: SubjectsPageComponent },
   { path: "observables", component: ObservablesPageComponent },
-  { path: "", component: WelcomePageComponent }
+  { path: "", pathMatch: "full", component: WelcomePageComponent }
 ];
 
 @NgModule({
-  declarations: [AppComponent, ObservablesPageComponent, WelcomePageComponent],
+  declarations: [
+    AppComponent,
+    ObservablesPageComponent,
+    WelcomePageComponent,
+    SubjectsPageComponent
+  ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
