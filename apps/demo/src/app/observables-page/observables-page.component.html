@@ -14,6 +14,11 @@
       </code>
     </pre>
 
+    <div class="marble-diagram">
+      <h2>Marble diagram</h2>
+      <div [inlineSVG]="'assets/timer-immediate.svg'"></div>
+    </div>
+
     <button mat-raised-button (click)="startIntervalDemo()">Start</button>
     <button mat-raised-button (click)="stopIntervalDemo()">Stop</button>
   </section>
@@ -31,6 +36,11 @@
       <code #code class="typescript">{{ completeDemoCode }}</code>
     </pre>
 
+    <div class="marble-diagram">
+      <h2>Marble diagram</h2>
+      <div [inlineSVG]="'assets/timer-delay.svg'"></div>
+    </div>
+
     <button mat-raised-button (click)="startCompleteDemo()">Start</button>
   </section>
 </mat-expansion-panel>
@@ -46,6 +56,11 @@
     <pre>
       <code #code class="typescript">{{ errorDemoCode }}</code>
     </pre>
+
+    <div class="marble-diagram">
+      <h2>Marble diagram</h2>
+      <div [inlineSVG]="'assets/timer-error.svg'"></div>
+    </div>
 
     <button mat-raised-button (click)="startErrorDemo()">Start</button>
   </section>
