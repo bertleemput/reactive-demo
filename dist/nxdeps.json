@@ -209,7 +209,7 @@
             {
               "file": "apps/demo/src/app/app.component.html",
               "ext": ".html",
-              "mtime": 1587818148282.356
+              "mtime": 1588084350272.8481
             },
             {
               "file": "apps/demo/src/app/app.component.scss",
@@ -229,17 +229,22 @@
             {
               "file": "apps/demo/src/app/app.module.ts",
               "ext": ".ts",
-              "mtime": 1587889654201.4626
+              "mtime": 1588084986292.65
+            },
+            {
+              "file": "apps/demo/src/app/directives/code-block.directive.ts",
+              "ext": ".ts",
+              "mtime": 1588084920741
             },
             {
               "file": "apps/demo/src/app/observables-page/observables-page.component.html",
               "ext": ".html",
-              "mtime": 1587889603617.9768
+              "mtime": 1588084720977.8528
             },
             {
               "file": "apps/demo/src/app/observables-page/observables-page.component.scss",
               "ext": ".scss",
-              "mtime": 1587817164374.0002
+              "mtime": 1587891825720.7454
             },
             {
               "file": "apps/demo/src/app/observables-page/observables-page.component.spec.ts",
@@ -249,12 +254,32 @@
             {
               "file": "apps/demo/src/app/observables-page/observables-page.component.ts",
               "ext": ".ts",
-              "mtime": 1587821373759.0203
+              "mtime": 1588084777557.7244
+            },
+            {
+              "file": "apps/demo/src/app/operators-page/operators-page.component.css",
+              "ext": ".css",
+              "mtime": 1588083176982.4026
+            },
+            {
+              "file": "apps/demo/src/app/operators-page/operators-page.component.html",
+              "ext": ".html",
+              "mtime": 1588083176976.3665
+            },
+            {
+              "file": "apps/demo/src/app/operators-page/operators-page.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1588084896189.6753
+            },
+            {
+              "file": "apps/demo/src/app/operators-page/operators-page.component.ts",
+              "ext": ".ts",
+              "mtime": 1588084896208.676
             },
             {
               "file": "apps/demo/src/app/subjects-page/subjects-page.component.html",
               "ext": ".html",
-              "mtime": 1587821310055.447
+              "mtime": 1588084739903.4094
             },
             {
               "file": "apps/demo/src/app/subjects-page/subjects-page.component.scss",
@@ -269,7 +294,7 @@
             {
               "file": "apps/demo/src/app/subjects-page/subjects-page.component.ts",
               "ext": ".ts",
-              "mtime": 1587821316447.412
+              "mtime": 1588084651662.245
             },
             {
               "file": "apps/demo/src/app/welcome-page/welcome-page.component.html",
@@ -297,9 +322,19 @@
               "mtime": 1587816289421.9243
             },
             {
-              "file": "apps/demo/src/assets/tekening.svg",
+              "file": "apps/demo/src/assets/timer-delay.svg",
               "ext": ".svg",
-              "mtime": 1587889191886.2747
+              "mtime": 1587892043662.726
+            },
+            {
+              "file": "apps/demo/src/assets/timer-error.svg",
+              "ext": ".svg",
+              "mtime": 1587892411907.712
+            },
+            {
+              "file": "apps/demo/src/assets/timer-immediate.svg",
+              "ext": ".svg",
+              "mtime": 1587891662634.7156
             },
             {
               "file": "apps/demo/src/environments/environment.prod.ts",
@@ -823,7 +858,7 @@
       {
         "file": "apps/demo/src/app/app.component.html",
         "ext": ".html",
-        "mtime": 1587818148282.356
+        "mtime": 1588084350272.8481
       },
       {
         "file": "apps/demo/src/app/app.component.scss",
@@ -843,17 +878,22 @@
       {
         "file": "apps/demo/src/app/app.module.ts",
         "ext": ".ts",
-        "mtime": 1587889654201.4626
+        "mtime": 1588084986292.65
+      },
+      {
+        "file": "apps/demo/src/app/directives/code-block.directive.ts",
+        "ext": ".ts",
+        "mtime": 1588084920741
       },
       {
         "file": "apps/demo/src/app/observables-page/observables-page.component.html",
         "ext": ".html",
-        "mtime": 1587889603617.9768
+        "mtime": 1588084720977.8528
       },
       {
         "file": "apps/demo/src/app/observables-page/observables-page.component.scss",
         "ext": ".scss",
-        "mtime": 1587817164374.0002
+        "mtime": 1587891825720.7454
       },
       {
         "file": "apps/demo/src/app/observables-page/observables-page.component.spec.ts",
@@ -863,12 +903,32 @@
       {
         "file": "apps/demo/src/app/observables-page/observables-page.component.ts",
         "ext": ".ts",
-        "mtime": 1587821373759.0203
+        "mtime": 1588084777557.7244
+      },
+      {
+        "file": "apps/demo/src/app/operators-page/operators-page.component.css",
+        "ext": ".css",
+        "mtime": 1588083176982.4026
+      },
+      {
+        "file": "apps/demo/src/app/operators-page/operators-page.component.html",
+        "ext": ".html",
+        "mtime": 1588083176976.3665
+      },
+      {
+        "file": "apps/demo/src/app/operators-page/operators-page.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1588084896189.6753
+      },
+      {
+        "file": "apps/demo/src/app/operators-page/operators-page.component.ts",
+        "ext": ".ts",
+        "mtime": 1588084896208.676
       },
       {
         "file": "apps/demo/src/app/subjects-page/subjects-page.component.html",
         "ext": ".html",
-        "mtime": 1587821310055.447
+        "mtime": 1588084739903.4094
       },
       {
         "file": "apps/demo/src/app/subjects-page/subjects-page.component.scss",
@@ -883,7 +943,7 @@
       {
         "file": "apps/demo/src/app/subjects-page/subjects-page.component.ts",
         "ext": ".ts",
-        "mtime": 1587821316447.412
+        "mtime": 1588084651662.245
       },
       {
         "file": "apps/demo/src/app/welcome-page/welcome-page.component.html",
@@ -911,9 +971,19 @@
         "mtime": 1587816289421.9243
       },
       {
-        "file": "apps/demo/src/assets/tekening.svg",
+        "file": "apps/demo/src/assets/timer-delay.svg",
         "ext": ".svg",
-        "mtime": 1587889191886.2747
+        "mtime": 1587892043662.726
+      },
+      {
+        "file": "apps/demo/src/assets/timer-error.svg",
+        "ext": ".svg",
+        "mtime": 1587892411907.712
+      },
+      {
+        "file": "apps/demo/src/assets/timer-immediate.svg",
+        "ext": ".svg",
+        "mtime": 1587891662634.7156
       },
       {
         "file": "apps/demo/src/environments/environment.prod.ts",

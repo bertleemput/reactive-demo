@@ -1,24 +1,13 @@
-import {
-  Component,
-  QueryList,
-  ElementRef,
-  AfterViewInit,
-  ViewChildren
-} from "@angular/core";
+import { Component } from "@angular/core";
 import { Subject, timer } from "rxjs";
 import { takeWhile } from "rxjs/operators";
-
-import hljs from "highlight.js/lib/core";
 
 @Component({
   selector: "reactive-demo-subjects-page",
   templateUrl: "./subjects-page.component.html",
   styleUrls: ["./subjects-page.component.scss"]
 })
-export class SubjectsPageComponent implements AfterViewInit {
-  @ViewChildren("code")
-  codeSnippets: QueryList<ElementRef>;
-
+export class SubjectsPageComponent {
   subjectDemoCode = `
   const subject = new Subject<number>();
 
@@ -51,9 +40,5 @@ export class SubjectsPageComponent implements AfterViewInit {
     timer(2000).subscribe(() => {
       subject.subscribe(data => console.log("Subscription 2: ", data));
     });
-  }
-
-  ngAfterViewInit(): void {
-    this.codeSnippets.forEach(x => hljs.highlightBlock(x.nativeElement));
   }
 }

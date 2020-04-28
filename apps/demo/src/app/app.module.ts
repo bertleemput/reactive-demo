@@ -11,10 +11,13 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { WelcomePageComponent } from "./welcome-page/welcome-page.component";
 import { SubjectsPageComponent } from "./subjects-page/subjects-page.component";
 import { HttpClientModule } from "@angular/common/http";
+import { OperatorsPageComponent } from "./operators-page/operators-page.component";
+import { CodeBlockDirective } from "./directives/code-block.directive";
 
 const routes: Routes = [
   { path: "subjects", component: SubjectsPageComponent },
   { path: "observables", component: ObservablesPageComponent },
+  { path: "operators", component: OperatorsPageComponent },
   { path: "", pathMatch: "full", component: WelcomePageComponent }
 ];
 
@@ -23,7 +26,9 @@ const routes: Routes = [
     AppComponent,
     ObservablesPageComponent,
     WelcomePageComponent,
-    SubjectsPageComponent
+    SubjectsPageComponent,
+    OperatorsPageComponent,
+    CodeBlockDirective
   ],
   imports: [
     BrowserModule,

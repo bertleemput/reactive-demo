@@ -1,10 +1,4 @@
-import {
-  Component,
-  ElementRef,
-  AfterViewInit,
-  ViewChildren,
-  QueryList
-} from "@angular/core";
+import { Component } from "@angular/core";
 import {
   timer,
   Observable,
@@ -15,17 +9,12 @@ import {
 } from "rxjs";
 import { mergeMap } from "rxjs/operators";
 
-import hljs from "highlight.js/lib/core";
-
 @Component({
   templateUrl: "./observables-page.component.html",
   styleUrls: ["./observables-page.component.scss"]
 })
-export class ObservablesPageComponent implements AfterViewInit {
+export class ObservablesPageComponent {
   private intervalDemoSubscription: Subscription;
-
-  @ViewChildren("code")
-  codeSnippets: QueryList<ElementRef>;
 
   intervalDemoStartCode = `
   // Start the timer
@@ -47,7 +36,8 @@ export class ObservablesPageComponent implements AfterViewInit {
   interval$.subscribe({
     next: data => console.log(data),
     complete: () => console.log("Observable completed")
-  });`;
+  });
+  `;
 
   errorDemoCode = `
   timer(0, 1000)
@@ -152,9 +142,5 @@ export class ObservablesPageComponent implements AfterViewInit {
     console.log("Before subscription");
     sequence$.subscribe(x => console.log("Data: ", x));
     console.log("After subscription");
-  }
-
-  ngAfterViewInit(): void {
-    this.codeSnippets.forEach(x => hljs.highlightBlock(x.nativeElement));
   }
 }
