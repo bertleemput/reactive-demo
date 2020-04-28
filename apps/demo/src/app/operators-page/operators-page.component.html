@@ -1,1 +1,77 @@
-<p>operators-page works!</p>
+<h1>Operator demo's</h1>
+
+<h2>Combinational</h2>
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      CombineLatest
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <section>
+    <p>CombineLatest gets the latest value from each observable</p>
+
+    <p>
+      <strong>Note:</strong> Observables are only combined when both have
+      emitted at least one value.
+    </p>
+
+    <pre>
+      <code reactiveDemoCodeBlock class="typescript">{{ combineLatestDemoCode }}</code>
+    </pre>
+
+    <button mat-raised-button (click)="startCombineLatestDemo()">Start</button>
+    <!-- <button mat-raised-button (click)="stopIntervalDemo()">Stop</button> -->
+  </section>
+</mat-expansion-panel>
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Merge
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <section>
+    <p>Merge merges multiple observable into a single observable</p>
+
+    <pre>
+      <code reactiveDemoCodeBlock class="typescript">{{ mergeDemoCode }}</code>
+    </pre>
+
+    <button mat-raised-button (click)="startMergeDemo()">Start</button>
+    <!-- <button mat-raised-button (click)="stopIntervalDemo()">Stop</button> -->
+  </section>
+</mat-expansion-panel>
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      WithLatestFrom
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <section>
+    <p>
+      WithLatestFrom 'adds' the latest value from one observable the other
+      observable when the other observable emits.
+    </p>
+
+    <p>
+      <strong>Note:</strong> The combined value is only emitted when both input
+      observables have emitted atleast one value.
+    </p>
+
+    <pre>
+      <code reactiveDemoCodeBlock class="typescript">{{ withLatestFromDemoCode }}</code>
+    </pre>
+
+    <button mat-raised-button (click)="startWithLatestFromDemo()">Start</button>
+    <!-- <button mat-raised-button (click)="stopIntervalDemo()">Stop</button> -->
+  </section>
+</mat-expansion-panel>
+
+<h2>Creational</h2>
+
+<h2>Filtering</h2>
