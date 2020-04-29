@@ -41,4 +41,8 @@ export class SubjectsPageComponent {
       subject.subscribe(data => console.log("Subscription 2: ", data));
     });
   }
+
+  stop() {
+    console.clear();
+  }
 }

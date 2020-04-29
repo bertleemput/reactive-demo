@@ -1,19 +1,21 @@
-import { Component } from "@angular/core";
+import { Component, OnDestroy } from "@angular/core";
 import {
   timer,
   Observable,
   Subscription,
   throwError,
   of,
-  fromEvent
+  fromEvent,
+  Subject
 } from "rxjs";
-import { mergeMap } from "rxjs/operators";
+import { mergeMap, takeUntil, map } from "rxjs/operators";
 
 @Component({
   templateUrl: "./observables-page.component.html",
   styleUrls: ["./observables-page.component.scss"]
 })
-export class ObservablesPageComponent {
+export class ObservablesPageComponent implements OnDestroy {
+  private destroySubject = new Subject();
   private intervalDemoSubscription: Subscription;
 
   intervalDemoStartCode = `
@@ -58,7 +60,9 @@ export class ObservablesPageComponent {
   cold$.subscribe(data => console.log("Cold 1", data));
   cold$.subscribe(data => console.log("Cold 2", data));
 
-  const hot$ = fromEvent(document, "mousedown");
+  const hot$ = fromEvent(document, "mousedown").pipe(
+    map((e: MouseEvent) => e.screenX)
+  );
   hot$.subscribe(data => console.log("Hot 1", data));
   hot$.subscribe(data => console.log("Hot 2", data));
   `;
@@ -93,6 +97,13 @@ export class ObservablesPageComponent {
     if (this.intervalDemoSubscription) {
       this.intervalDemoSubscription.unsubscribe();
     }
+
+    console.clear();
+  }
+
+  stop() {
+    this.destroySubject.next();
+    console.clear();
   }
 
   startCompleteDemo() {
@@ -123,7 +134,10 @@ export class ObservablesPageComponent {
     cold$.subscribe(data => console.log("Cold 1", data));
     cold$.subscribe(data => console.log("Cold 2", data));
 
-    const hot$ = fromEvent(document, "mousedown");
+    const hot$ = fromEvent(document, "mousedown").pipe(
+      map((e: MouseEvent) => e.screenX),
+      takeUntil(this.destroySubject)
+    );
     hot$.subscribe(data => console.log("Hot 1", data));
     hot$.subscribe(data => console.log("Hot 2", data));
   }
@@ -142,5 +156,9 @@ export class ObservablesPageComponent {
     console.log("Before subscription");
     sequence$.subscribe(x => console.log("Data: ", x));
     console.log("After subscription");
+  }
+
+  ngOnDestroy(): void {
+    this.stop();
   }
 }

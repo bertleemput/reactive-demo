@@ -22,7 +22,7 @@
     </pre>
 
     <button mat-raised-button (click)="startCombineLatestDemo()">Start</button>
-    <!-- <button mat-raised-button (click)="stopIntervalDemo()">Stop</button> -->
+    <button mat-raised-button (click)="stop()">Stop</button>
   </section>
 </mat-expansion-panel>
 
@@ -41,7 +41,7 @@
     </pre>
 
     <button mat-raised-button (click)="startMergeDemo()">Start</button>
-    <!-- <button mat-raised-button (click)="stopIntervalDemo()">Stop</button> -->
+    <button mat-raised-button (click)="stop()">Stop</button>
   </section>
 </mat-expansion-panel>
 
@@ -68,10 +68,140 @@
     </pre>
 
     <button mat-raised-button (click)="startWithLatestFromDemo()">Start</button>
-    <!-- <button mat-raised-button (click)="stopIntervalDemo()">Stop</button> -->
+    <button mat-raised-button (click)="stop()">Stop</button>
   </section>
 </mat-expansion-panel>
 
 <h2>Creational</h2>
 
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      From
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <section>
+    <p>
+      From can convert an array, promise or iterable into an observable.
+    </p>
+
+    <p>
+      <strong>Note:</strong> For arrays and iterables all values will be emitted
+      one by one.
+    </p>
+
+    <pre>
+      <code reactiveDemoCodeBlock class="typescript">{{ withLatestFromDemoCode }}</code>
+    </pre>
+
+    <button mat-raised-button (click)="startFromDemo()">Start</button>
+    <button mat-raised-button (click)="stop()">Stop</button>
+  </section>
+</mat-expansion-panel>
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Of
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <section>
+    <p>
+      Of can convert a variable amount of values into an observable and then
+      completes.
+    </p>
+
+    <pre>
+      <code reactiveDemoCodeBlock class="typescript">{{ withLatestFromDemoCode }}</code>
+    </pre>
+
+    <button mat-raised-button (click)="startOfDemo()">Start</button>
+    <button mat-raised-button (click)="stop()">Stop</button>
+  </section>
+</mat-expansion-panel>
+
 <h2>Filtering</h2>
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      DebounceTime
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <section>
+    <p>Debounces the emitted values.</p>
+
+    <pre>
+      <code reactiveDemoCodeBlock class="typescript">{{ withLatestFromDemoCode }}</code>
+    </pre>
+
+    <p><input type="text" (input)="handleInput($event)" /></p>
+
+    <button mat-raised-button (click)="startDebounceTimeDemo()">Start</button>
+    <button mat-raised-button (click)="stop()">Stop</button>
+  </section>
+</mat-expansion-panel>
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      DistinctUntillChanged
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <section>
+    <p>
+      It only emits a value when it is different from the last emitted value.
+    </p>
+
+    <pre>
+      <code reactiveDemoCodeBlock class="typescript">{{ withLatestFromDemoCode }}</code>
+    </pre>
+
+    <button mat-raised-button (click)="startDistinctUntilChangedDemo()">
+      Start
+    </button>
+    <button mat-raised-button (click)="stop()">Stop</button>
+  </section>
+</mat-expansion-panel>
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Filter
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <section>
+    <p>It filters value based on a predicate.</p>
+
+    <pre>
+      <code reactiveDemoCodeBlock class="typescript">{{ withLatestFromDemoCode }}</code>
+    </pre>
+
+    <button mat-raised-button (click)="startFilterDemo()">Start</button>
+    <button mat-raised-button (click)="stop()">Stop</button>
+  </section>
+</mat-expansion-panel>
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Take
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <section>
+    <p>It takes a certain amount of emissions and then completes.</p>
+
+    <pre>
+      <code reactiveDemoCodeBlock class="typescript">{{ withLatestFromDemoCode }}</code>
+    </pre>
+
+    <button mat-raised-button (click)="startTakeDemo()">Start</button>
+    <button mat-raised-button (click)="stop()">Stop</button>
+  </section>
+</mat-expansion-panel>
