@@ -19,7 +19,7 @@ export class ObservablesPageComponent implements OnDestroy {
   private intervalDemoSubscription: Subscription;
 
   intervalDemoStartCode = `
-  // Start the timer
+  // Code that is called on 'Start'
   const interval$ = timer(0, 2000);
 
   this.intervalDemoSubscription = interval$.subscribe(data => {
@@ -27,7 +27,7 @@ export class ObservablesPageComponent implements OnDestroy {
   });`;
 
   intervalDemoStopCode = `
-  // Stop the timer
+  // Code that is called on 'Stop'
   if (this.intervalDemoSubscription) {
     this.intervalDemoSubscription.unsubscribe();
   }`;
@@ -79,9 +79,7 @@ export class ObservablesPageComponent implements OnDestroy {
   });
 
   console.log("Before subscription");
-  sequence$.subscribe(x =>
-    console.log("Data: ", x)
-  );
+  sequence$.subscribe(x => console.log("Data: ", x));
   console.log("After subscription");
   `;
 

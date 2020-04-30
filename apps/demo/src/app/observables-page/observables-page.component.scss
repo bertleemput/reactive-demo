@@ -5,12 +5,3 @@ mat-expansion-panel {
 button {
   margin-right: 10px;
 }
-
-.marble-diagram {
-  & ::ng-deep svg {
-    width: 100%;
-    height: auto;
-  }
-
-  margin-bottom: 30px;
-}

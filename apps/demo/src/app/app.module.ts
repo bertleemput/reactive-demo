@@ -13,6 +13,7 @@ import { SubjectsPageComponent } from "./subjects-page/subjects-page.component";
 import { HttpClientModule } from "@angular/common/http";
 import { OperatorsPageComponent } from "./operators-page/operators-page.component";
 import { CodeBlockDirective } from "./directives/code-block.directive";
+import { MarbleDiagramComponent } from "./marble-diagram/marble-diagram.component";
 
 const routes: Routes = [
   { path: "subjects", component: SubjectsPageComponent },
@@ -28,7 +29,8 @@ const routes: Routes = [
     WelcomePageComponent,
     SubjectsPageComponent,
     OperatorsPageComponent,
-    CodeBlockDirective
+    CodeBlockDirective,
+    MarbleDiagramComponent
   ],
   imports: [
     BrowserModule,

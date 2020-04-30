@@ -12,6 +12,10 @@
       <code reactiveDemoCodeBlock class="typescript">{{ subjectDemoCode }}</code>
     </pre>
 
+    <reactive-demo-marble-diagram
+      [diagram]="'subject.svg'"
+    ></reactive-demo-marble-diagram>
+
     <button mat-raised-button (click)="startSubjectDemo()">Start</button>
     <button mat-raised-button (click)="stop()">Stop</button>
   </section>

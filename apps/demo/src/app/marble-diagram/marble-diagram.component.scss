@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  margin-bottom: 30px;
+
+  &::ng-deep svg {
+    width: 100%;
+    height: auto;
+  }
+}

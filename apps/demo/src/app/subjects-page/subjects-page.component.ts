@@ -34,11 +34,17 @@ export class SubjectsPageComponent {
       .subscribe(subject);
 
     timer(1000).subscribe(() => {
-      subject.subscribe(data => console.log("Subscription 1: ", data));
+      subject.subscribe({
+        next: data => console.log("Subscription 1: ", data),
+        complete: () => console.log("Subscription 1 complete")
+      });
     });
 
     timer(2000).subscribe(() => {
-      subject.subscribe(data => console.log("Subscription 2: ", data));
+      subject.subscribe({
+        next: data => console.log("Subscription 2: ", data),
+        complete: () => console.log("Subscription 2 complete")
+      });
     });
   }
 

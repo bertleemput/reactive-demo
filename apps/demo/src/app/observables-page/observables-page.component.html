@@ -3,7 +3,7 @@
 <mat-expansion-panel>
   <mat-expansion-panel-header>
     <mat-panel-title>
-      Creating an observable based on a timer
+      Subscribe / unsubscribe on an timer-observable
     </mat-panel-title>
   </mat-expansion-panel-header>
 
@@ -14,10 +14,9 @@
       </code>
     </pre>
 
-    <div class="marble-diagram">
-      <h2>Marble diagram</h2>
-      <div [inlineSVG]="'assets/timer-immediate.svg'"></div>
-    </div>
+    <reactive-demo-marble-diagram
+      [diagram]="'timer-immediate.svg'"
+    ></reactive-demo-marble-diagram>
 
     <button mat-raised-button (click)="startIntervalDemo()">Start</button>
     <button mat-raised-button (click)="stopIntervalDemo()">Stop</button>
@@ -27,7 +26,7 @@
 <mat-expansion-panel>
   <mat-expansion-panel-header>
     <mat-panel-title>
-      When stream is finished/closed the observable completes
+      Observables complete when finished
     </mat-panel-title>
   </mat-expansion-panel-header>
 
@@ -36,10 +35,9 @@
       <code reactiveDemoCodeBlock class="typescript">{{ completeDemoCode }}</code>
     </pre>
 
-    <div class="marble-diagram">
-      <h2>Marble diagram</h2>
-      <div [inlineSVG]="'assets/timer-delay.svg'"></div>
-    </div>
+    <reactive-demo-marble-diagram
+      [diagram]="'timer-delay.svg'"
+    ></reactive-demo-marble-diagram>
 
     <button mat-raised-button (click)="startCompleteDemo()">Start</button>
     <button mat-raised-button (click)="stop()">Stop</button>
@@ -49,7 +47,7 @@
 <mat-expansion-panel>
   <mat-expansion-panel-header>
     <mat-panel-title>
-      When an error occurs (and it is not catched) the observable completes
+      Observables can throw errors
     </mat-panel-title>
   </mat-expansion-panel-header>
 
@@ -58,10 +56,9 @@
       <code reactiveDemoCodeBlock class="typescript">{{ errorDemoCode }}</code>
     </pre>
 
-    <div class="marble-diagram">
-      <h2>Marble diagram</h2>
-      <div [inlineSVG]="'assets/timer-error.svg'"></div>
-    </div>
+    <reactive-demo-marble-diagram
+      [diagram]="'timer-error.svg'"
+    ></reactive-demo-marble-diagram>
 
     <button mat-raised-button (click)="startErrorDemo()">Start</button>
     <button mat-raised-button (click)="stop()">Stop</button>
@@ -82,6 +79,10 @@
     <pre>
     <code reactiveDemoCodeBlock class="typescript">{{ hotColdDemoCode }}</code>
   </pre>
+
+    <reactive-demo-marble-diagram
+      [diagram]="'hot-cold.svg'"
+    ></reactive-demo-marble-diagram>
 
     <button mat-raised-button (click)="startHotColdDemo()">Start</button>
     <button mat-raised-button (click)="stop()">Stop</button>

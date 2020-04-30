@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    id="svg5189"
    version="1.1"
-   viewBox="0 0 203.3199 16.436361"
-   height="16.436361mm"
-   width="203.3199mm">
+   viewBox="0 0 188.91342 12.705356"
+   height="12.705357mm"
+   width="188.91342mm">
   <defs
      id="defs5183" />
   <metadata
@@ -24,50 +24,41 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 0,6.352678 H 188.83346"
+     id="path5096" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 184.09677,2.7591076 4.73669,3.59357"
+     id="path5384" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 188.83346,6.3526776 -4.73669,3.59357"
+     id="path5384-9" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.31708714px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 19.035042,0.00163826 18.903782,12.703718"
+     id="path5181" />
   <g
-     transform="translate(-3.345899,-140.28182)"
-     id="layer1">
-    <path
-       id="path5096"
-       d="M 11.166541,148.5 H 200"
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <g
-       id="g4997-5-8"
-       transform="translate(27.795846,129.56004)">
-      <g
-         id="g5343">
-        <g
-           id="g5024-2-1">
-          <circle
-             id="path10-5-4"
-             cx="21.144939"
-             cy="18.939964"
-             style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.43635687;stroke-opacity:1"
-             r="8" />
-        </g>
-        <text
-           id="text4992-3-9"
-           y="22.514194"
-           x="17.773424"
-           style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           xml:space="preserve"><tspan
-             style="fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
-             y="22.514194"
-             x="17.773424"
-             id="tspan4990-1-4">0</tspan></text>
-      </g>
-    </g>
-    <path
-       id="path5384"
-       d="M 195.26331,144.90643 200,148.5"
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       id="path5384-9"
-       d="m 200,148.5 -4.73669,3.59357"
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       id="path5181"
-       d="m 71.565254,142.08179 -0.13126,12.70208"
-       style="fill:none;stroke:#000000;stroke-width:0.31708714px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     id="g492"
+     transform="translate(-25.432678,-47.703127)">
+    <ellipse
+       style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1"
+       cy="54.055805"
+       cx="44.317707"
+       id="path10-5-1"
+       rx="4.8295503"
+       ry="4.8044934" />
+    <text
+       id="text4992-3-9-1-9"
+       y="56.935898"
+       x="41.797619"
+       style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:7.76111126px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
+         y="56.935898"
+         x="41.797619"
+         id="tspan4990-1-4-8-6">0</tspan></text>
   </g>
 </svg>
