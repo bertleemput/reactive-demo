@@ -36,11 +36,13 @@ export class OperatorsPageComponent implements OnDestroy {
     scan(acc => acc + 1, 0)
   );
 
-  combineLatest([timer$, click$]).subscribe(([timerTicks, clicks]) =>
-    console.log(
-      \`We have received \${timerTicks} timer ticks and \${clicks} clicks\`
-    )
-  );
+  combineLatest([timer$, click$])
+    .pipe(takeUntil(this.destroySubject))
+    .subscribe(([timerTicks, clicks]) =>
+      console.log(
+        \`We have received \${timerTicks} timer ticks and \${clicks} clicks\`
+      )
+    );
   `;
 
   mergeDemoCode = `
@@ -48,21 +50,27 @@ export class OperatorsPageComponent implements OnDestroy {
   const timerTwo$ = timer(1000).pipe(mapTo(1));
   const timerThree$ = timer(2000).pipe(mapTo({ name: "Rxjs Demo" }));
 
-  merge(timerOne$, timerTwo$, timerThree$).subscribe(value =>
-    console.log(value)
-  );
+  merge(timerOne$, timerTwo$, timerThree$).subscribe({
+    next: value => console.log("merge:", value),
+    complete: () => console.log("merge completed")
+  });
   `;
 
   withLatestFromDemoCode = `
   const timer$ = timer(5000, 1000);
 
   const click$ = fromEvent(document, "mousedown").pipe(
-    scan(acc => acc + 1, 0)
+    scan(acc => acc + 1, 0),
+    takeUntil(this.destroySubject)
   );
 
   click$
     .pipe(withLatestFrom(timer$))
-    .subscribe(([click, t]) => console.log(click, t));
+    .subscribe(([clicks, timerTicks]) =>
+      console.log(
+        \`We have received \${timerTicks} timer ticks and \${clicks} clicks\`
+      )
+    );
   `;
 
   handleInput(event: InputEvent) {
@@ -90,9 +98,10 @@ export class OperatorsPageComponent implements OnDestroy {
     const timerTwo$ = timer(1000).pipe(mapTo(1));
     const timerThree$ = timer(2000).pipe(mapTo({ name: "Rxjs Demo" }));
 
-    merge(timerOne$, timerTwo$, timerThree$).subscribe(value =>
-      console.log(value)
-    );
+    merge(timerOne$, timerTwo$, timerThree$).subscribe({
+      next: value => console.log("merge:", value),
+      complete: () => console.log("merge completed")
+    });
   }
 
   startWithLatestFromDemo() {
@@ -104,8 +113,12 @@ export class OperatorsPageComponent implements OnDestroy {
     );
 
     click$
-      .pipe(withLatestFrom(timer$))
-      .subscribe(([click, t]) => console.log(click, t));
+      .pipe(withLatestFrom(timer$), takeUntil(this.destroySubject))
+      .subscribe(([clicks, timerTicks]) =>
+        console.log(
+          `We have received ${timerTicks} timer ticks and ${clicks} clicks`
+        )
+      );
   }
 
   startFromDemo() {

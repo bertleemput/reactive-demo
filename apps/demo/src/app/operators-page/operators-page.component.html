@@ -21,6 +21,10 @@
       <code reactiveDemoCodeBlock class="typescript">{{ combineLatestDemoCode }}</code>
     </pre>
 
+    <reactive-demo-marble-diagram
+      [diagram]="'combine-latest.svg'"
+    ></reactive-demo-marble-diagram>
+
     <button mat-raised-button (click)="startCombineLatestDemo()">Start</button>
     <button mat-raised-button (click)="stop()">Stop</button>
   </section>
@@ -39,6 +43,10 @@
     <pre>
       <code reactiveDemoCodeBlock class="typescript">{{ mergeDemoCode }}</code>
     </pre>
+
+    <reactive-demo-marble-diagram
+      [diagram]="'merge.svg'"
+    ></reactive-demo-marble-diagram>
 
     <button mat-raised-button (click)="startMergeDemo()">Start</button>
     <button mat-raised-button (click)="stop()">Stop</button>
@@ -66,6 +74,10 @@
     <pre>
       <code reactiveDemoCodeBlock class="typescript">{{ withLatestFromDemoCode }}</code>
     </pre>
+
+    <reactive-demo-marble-diagram
+      [diagram]="'with-latest-from.svg'"
+    ></reactive-demo-marble-diagram>
 
     <button mat-raised-button (click)="startWithLatestFromDemo()">Start</button>
     <button mat-raised-button (click)="stop()">Stop</button>
