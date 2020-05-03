@@ -104,8 +104,12 @@
     </p>
 
     <pre>
-      <code reactiveDemoCodeBlock class="typescript">{{ withLatestFromDemoCode }}</code>
+      <code reactiveDemoCodeBlock class="typescript">{{ fromDemoCode }}</code>
     </pre>
+
+    <reactive-demo-marble-diagram
+      [diagram]="'from.svg'"
+    ></reactive-demo-marble-diagram>
 
     <button mat-raised-button (click)="startFromDemo()">Start</button>
     <button mat-raised-button (click)="stop()">Stop</button>
@@ -126,8 +130,12 @@
     </p>
 
     <pre>
-      <code reactiveDemoCodeBlock class="typescript">{{ withLatestFromDemoCode }}</code>
+      <code reactiveDemoCodeBlock class="typescript">{{ ofDemoCode }}</code>
     </pre>
+
+    <reactive-demo-marble-diagram
+      [diagram]="'of.svg'"
+    ></reactive-demo-marble-diagram>
 
     <button mat-raised-button (click)="startOfDemo()">Start</button>
     <button mat-raised-button (click)="stop()">Stop</button>

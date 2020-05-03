@@ -51,8 +51,8 @@ export class OperatorsPageComponent implements OnDestroy {
   const timerThree$ = timer(2000).pipe(mapTo({ name: "Rxjs Demo" }));
 
   merge(timerOne$, timerTwo$, timerThree$).subscribe({
-    next: value => console.log("merge:", value),
-    complete: () => console.log("merge completed")
+    next: value => console.log("Merge:", value),
+    complete: () => console.log("Merge completed")
   });
   `;
 
@@ -71,6 +71,25 @@ export class OperatorsPageComponent implements OnDestroy {
         \`We have received \${timerTicks} timer ticks and \${clicks} clicks\`
       )
     );
+  `;
+
+  fromDemoCode = `
+  from([0, 1, 2, 3, 4]).subscribe(value =>
+    console.log("From array: ", value)
+  );
+
+  const promise = new Promise(resolve => {
+    timer(5000).subscribe(() => resolve(Math.random()));
+  });
+
+  from(promise).subscribe(value => console.log("From promise: ", value));
+  `;
+
+  ofDemoCode = `
+  of(1, "b", "c", { name: "RxJS demo" }, 5).subscribe({
+    next: value => console.log("Of:", value),
+    complete: () => console.log("Of completed")
+  });
   `;
 
   handleInput(event: InputEvent) {
@@ -99,8 +118,8 @@ export class OperatorsPageComponent implements OnDestroy {
     const timerThree$ = timer(2000).pipe(mapTo({ name: "Rxjs Demo" }));
 
     merge(timerOne$, timerTwo$, timerThree$).subscribe({
-      next: value => console.log("merge:", value),
-      complete: () => console.log("merge completed")
+      next: value => console.log("Merge:", value),
+      complete: () => console.log("Merge completed")
     });
   }
 
@@ -122,15 +141,19 @@ export class OperatorsPageComponent implements OnDestroy {
   }
 
   startFromDemo() {
-    from([1, 2, 3, 4, 5]).subscribe(value =>
-      console.log("From array: ", value)
-    );
+    from([0, 1, 2, 3, 4]).subscribe({
+      next: value => console.log("From array:", value),
+      complete: () => console.log("From array completed")
+    });
 
     const promise = new Promise(resolve => {
       timer(5000).subscribe(() => resolve(Math.random()));
     });
 
-    from(promise).subscribe(value => console.log("From promise: ", value));
+    from(promise).subscribe({
+      next: value => console.log("From promise:", value),
+      complete: () => console.log("From promise completed")
+    });
   }
 
   startOfDemo() {
