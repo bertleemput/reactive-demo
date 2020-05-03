@@ -152,11 +152,15 @@
   </mat-expansion-panel-header>
 
   <section>
-    <p>Debounces the emitted values.</p>
+    <p>Debounces the emitted values based on a certain timeout.</p>
 
     <pre>
-      <code reactiveDemoCodeBlock class="typescript">{{ withLatestFromDemoCode }}</code>
+      <code reactiveDemoCodeBlock class="typescript">{{ debounceDemoCode }}</code>
     </pre>
+
+    <reactive-demo-marble-diagram
+      [diagram]="'debounce.svg'"
+    ></reactive-demo-marble-diagram>
 
     <p><input type="text" (input)="handleInput($event)" /></p>
 
@@ -178,8 +182,12 @@
     </p>
 
     <pre>
-      <code reactiveDemoCodeBlock class="typescript">{{ withLatestFromDemoCode }}</code>
+      <code reactiveDemoCodeBlock class="typescript">{{ distinctUntilChangedDemoCode }}</code>
     </pre>
+
+    <reactive-demo-marble-diagram
+      [diagram]="'distinct.svg'"
+    ></reactive-demo-marble-diagram>
 
     <button mat-raised-button (click)="startDistinctUntilChangedDemo()">
       Start
@@ -199,8 +207,12 @@
     <p>It filters value based on a predicate.</p>
 
     <pre>
-      <code reactiveDemoCodeBlock class="typescript">{{ withLatestFromDemoCode }}</code>
+      <code reactiveDemoCodeBlock class="typescript">{{ filterDemoCode }}</code>
     </pre>
+
+    <reactive-demo-marble-diagram
+      [diagram]="'filter.svg'"
+    ></reactive-demo-marble-diagram>
 
     <button mat-raised-button (click)="startFilterDemo()">Start</button>
     <button mat-raised-button (click)="stop()">Stop</button>
@@ -218,8 +230,12 @@
     <p>It takes a certain amount of emissions and then completes.</p>
 
     <pre>
-      <code reactiveDemoCodeBlock class="typescript">{{ withLatestFromDemoCode }}</code>
+      <code reactiveDemoCodeBlock class="typescript">{{ takeDemoCode }}</code>
     </pre>
+
+    <reactive-demo-marble-diagram
+      [diagram]="'take.svg'"
+    ></reactive-demo-marble-diagram>
 
     <button mat-raised-button (click)="startTakeDemo()">Start</button>
     <button mat-raised-button (click)="stop()">Stop</button>

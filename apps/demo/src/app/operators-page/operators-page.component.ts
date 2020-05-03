@@ -92,6 +92,38 @@ export class OperatorsPageComponent implements OnDestroy {
   });
   `;
 
+  debounceDemoCode = `
+  this.inputSubject
+  .pipe(debounceTime(1000))
+  .subscribe(x => console.log("Debounce: " + x));
+  `;
+
+  distinctUntilChangedDemoCode = `
+  const keyPresses$ = fromEvent(document, "keydown").pipe(
+    map((x: KeyboardEvent) => x.key),
+    distinctUntilChanged()
+  );
+
+  keyPresses$.subscribe(x => console.log("Distinct: " + x));
+  `;
+
+  filterDemoCode = `
+  const filteredTimer = timer(0, 1000).pipe(
+    filter(x => x % 2 === 0)
+  );
+
+  filteredTimer.subscribe(x => console.log("Filter: " + x));
+  `;
+
+  takeDemoCode = `
+  const values$ = of(0, 1, 2, 3, 4, 5, 6).pipe(take(3));
+
+  values$.subscribe({
+    next: value => console.log("Take:", value),
+    complete: () => console.log("Take completed")
+  });
+  `;
+
   handleInput(event: InputEvent) {
     const element = event.target as HTMLInputElement;
     this.inputSubject.next(element.value);
@@ -166,32 +198,35 @@ export class OperatorsPageComponent implements OnDestroy {
   startDebounceTimeDemo() {
     this.inputSubject
       .pipe(debounceTime(1000), takeUntil(this.destroySubject))
-      .subscribe(x => console.log(x));
+      .subscribe(x => console.log("Debounce: " + x));
   }
 
   startDistinctUntilChangedDemo() {
-    const timer$ = fromEvent(document, "keydown").pipe(
+    const keyPresses$ = fromEvent(document, "keydown").pipe(
       map((x: KeyboardEvent) => x.key),
       distinctUntilChanged(),
       takeUntil(this.destroySubject)
     );
 
-    timer$.subscribe(x => console.log(x));
+    keyPresses$.subscribe(x => console.log("Distinct: " + x));
   }
 
   startFilterDemo() {
-    const timer$ = timer(0, 1000).pipe(
+    const filteredTimer = timer(0, 1000).pipe(
       filter(x => x % 2 === 0),
       takeUntil(this.destroySubject)
     );
 
-    timer$.subscribe(x => console.log(x));
+    filteredTimer.subscribe(x => console.log("Filter: " + x));
   }
 
   startTakeDemo() {
-    const values$ = of(1, 2, 3, 4, 5, 6).pipe(take(3));
+    const values$ = of(0, 1, 2, 3, 4, 5, 6).pipe(take(3));
 
-    values$.subscribe(x => console.log(x));
+    values$.subscribe({
+      next: value => console.log("Take:", value),
+      complete: () => console.log("Take completed")
+    });
   }
 
   stop() {
