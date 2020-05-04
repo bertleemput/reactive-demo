@@ -37,7 +37,6 @@ export class OperatorsPageComponent implements OnDestroy {
   );
 
   combineLatest([timer$, click$])
-    .pipe(takeUntil(this.destroySubject))
     .subscribe(([timerTicks, clicks]) =>
       console.log(
         \`We have received \${timerTicks} timer ticks and \${clicks} clicks\`
@@ -60,8 +59,7 @@ export class OperatorsPageComponent implements OnDestroy {
   const timer$ = timer(5000, 1000);
 
   const click$ = fromEvent(document, "mousedown").pipe(
-    scan(acc => acc + 1, 0),
-    takeUntil(this.destroySubject)
+    scan(acc => acc + 1, 0)
   );
 
   click$
