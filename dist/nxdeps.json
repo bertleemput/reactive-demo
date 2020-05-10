@@ -25,8 +25,13 @@
             "lint": {
               "builder": "@angular-devkit/build-angular:tslint",
               "options": {
-                "tsConfig": ["apps/demo-e2e/tsconfig.e2e.json"],
-                "exclude": ["**/node_modules/**", "!apps/demo-e2e/**"]
+                "tsConfig": [
+                  "apps/demo-e2e/tsconfig.e2e.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!apps/demo-e2e/**"
+                ]
               }
             }
           },
@@ -108,7 +113,10 @@
                 "polyfills": "apps/demo/src/polyfills.ts",
                 "tsConfig": "apps/demo/tsconfig.app.json",
                 "aot": true,
-                "assets": ["apps/demo/src/favicon.ico", "apps/demo/src/assets"],
+                "assets": [
+                  "apps/demo/src/favicon.ico",
+                  "apps/demo/src/assets"
+                ],
                 "styles": [
                   "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
                   "apps/demo/src/styles.scss"
@@ -170,7 +178,10 @@
                   "apps/demo/tsconfig.app.json",
                   "apps/demo/tsconfig.spec.json"
                 ],
-                "exclude": ["**/node_modules/**", "!apps/demo/**"]
+                "exclude": [
+                  "**/node_modules/**",
+                  "!apps/demo/**"
+                ]
               }
             },
             "test": {
@@ -218,7 +229,7 @@
             {
               "file": "apps/demo/src/app/app.module.ts",
               "ext": ".ts",
-              "mtime": 1588084986292.65
+              "mtime": 1588259158970.9353
             },
             {
               "file": "apps/demo/src/app/directives/code-block.directive.ts",
@@ -226,14 +237,29 @@
               "mtime": 1588084920741
             },
             {
+              "file": "apps/demo/src/app/marble-diagram/marble-diagram.component.html",
+              "ext": ".html",
+              "mtime": 1588258822950.838
+            },
+            {
+              "file": "apps/demo/src/app/marble-diagram/marble-diagram.component.scss",
+              "ext": ".scss",
+              "mtime": 1588486752629.2952
+            },
+            {
+              "file": "apps/demo/src/app/marble-diagram/marble-diagram.component.ts",
+              "ext": ".ts",
+              "mtime": 1588258810634.3728
+            },
+            {
               "file": "apps/demo/src/app/observables-page/observables-page.component.html",
               "ext": ".html",
-              "mtime": 1588084720977.8528
+              "mtime": 1588258931614.7537
             },
             {
               "file": "apps/demo/src/app/observables-page/observables-page.component.scss",
               "ext": ".scss",
-              "mtime": 1587891825720.7454
+              "mtime": 1588310927794.6067
             },
             {
               "file": "apps/demo/src/app/observables-page/observables-page.component.spec.ts",
@@ -243,12 +269,12 @@
             {
               "file": "apps/demo/src/app/observables-page/observables-page.component.ts",
               "ext": ".ts",
-              "mtime": 1588084777557.7244
+              "mtime": 1588255136518.3662
             },
             {
               "file": "apps/demo/src/app/operators-page/operators-page.component.html",
               "ext": ".html",
-              "mtime": 1588086926877.4656
+              "mtime": 1588493258514.4685
             },
             {
               "file": "apps/demo/src/app/operators-page/operators-page.component.scss",
@@ -263,17 +289,17 @@
             {
               "file": "apps/demo/src/app/operators-page/operators-page.component.ts",
               "ext": ".ts",
-              "mtime": 1588086956400.525
+              "mtime": 1588609692382.311
             },
             {
               "file": "apps/demo/src/app/subjects-page/subjects-page.component.html",
               "ext": ".html",
-              "mtime": 1588084739903.4094
+              "mtime": 1588259034726.5613
             },
             {
               "file": "apps/demo/src/app/subjects-page/subjects-page.component.scss",
               "ext": ".scss",
-              "mtime": 1587820589052.9998
+              "mtime": 1588259024455.4153
             },
             {
               "file": "apps/demo/src/app/subjects-page/subjects-page.component.spec.ts",
@@ -283,7 +309,7 @@
             {
               "file": "apps/demo/src/app/subjects-page/subjects-page.component.ts",
               "ext": ".ts",
-              "mtime": 1588084651662.245
+              "mtime": 1588258672618.9343
             },
             {
               "file": "apps/demo/src/app/welcome-page/welcome-page.component.html",
@@ -306,24 +332,79 @@
               "mtime": 1587714095930.1355
             },
             {
+              "file": "apps/demo/src/assets/combine-latest.svg",
+              "ext": ".svg",
+              "mtime": 1588490179058.7075
+            },
+            {
+              "file": "apps/demo/src/assets/debounce.svg",
+              "ext": ".svg",
+              "mtime": 1588492088917.647
+            },
+            {
+              "file": "apps/demo/src/assets/distinct.svg",
+              "ext": ".svg",
+              "mtime": 1588492460831.478
+            },
+            {
               "file": "apps/demo/src/assets/favicon.png",
               "ext": ".png",
               "mtime": 1587816289421.9243
             },
             {
+              "file": "apps/demo/src/assets/filter.svg",
+              "ext": ".svg",
+              "mtime": 1588492774803.0454
+            },
+            {
+              "file": "apps/demo/src/assets/from.svg",
+              "ext": ".svg",
+              "mtime": 1588490977868.7068
+            },
+            {
+              "file": "apps/demo/src/assets/hot-cold.svg",
+              "ext": ".svg",
+              "mtime": 1588257828519.1714
+            },
+            {
+              "file": "apps/demo/src/assets/merge.svg",
+              "ext": ".svg",
+              "mtime": 1588489241427.9292
+            },
+            {
+              "file": "apps/demo/src/assets/of.svg",
+              "ext": ".svg",
+              "mtime": 1588491536977.026
+            },
+            {
+              "file": "apps/demo/src/assets/subject.svg",
+              "ext": ".svg",
+              "mtime": 1588258553847.7083
+            },
+            {
+              "file": "apps/demo/src/assets/take.svg",
+              "ext": ".svg",
+              "mtime": 1588493246180.7756
+            },
+            {
               "file": "apps/demo/src/assets/timer-delay.svg",
               "ext": ".svg",
-              "mtime": 1587892043662.726
+              "mtime": 1588256627397.255
             },
             {
               "file": "apps/demo/src/assets/timer-error.svg",
               "ext": ".svg",
-              "mtime": 1587892411907.712
+              "mtime": 1588259092330.6423
             },
             {
               "file": "apps/demo/src/assets/timer-immediate.svg",
               "ext": ".svg",
-              "mtime": 1587891662634.7156
+              "mtime": 1588256590342.8083
+            },
+            {
+              "file": "apps/demo/src/assets/with-latest-from.svg",
+              "ext": ".svg",
+              "mtime": 1588490428701.0254
             },
             {
               "file": "apps/demo/src/environments/environment.prod.ts",
@@ -358,7 +439,7 @@
             {
               "file": "apps/demo/src/styles.scss",
               "ext": ".scss",
-              "mtime": 1587750242783.2463
+              "mtime": 1588486807558.2622
             },
             {
               "file": "apps/demo/src/test-setup.ts",
@@ -867,7 +948,7 @@
       {
         "file": "apps/demo/src/app/app.module.ts",
         "ext": ".ts",
-        "mtime": 1588084986292.65
+        "mtime": 1588259158970.9353
       },
       {
         "file": "apps/demo/src/app/directives/code-block.directive.ts",
@@ -875,14 +956,29 @@
         "mtime": 1588084920741
       },
       {
+        "file": "apps/demo/src/app/marble-diagram/marble-diagram.component.html",
+        "ext": ".html",
+        "mtime": 1588258822950.838
+      },
+      {
+        "file": "apps/demo/src/app/marble-diagram/marble-diagram.component.scss",
+        "ext": ".scss",
+        "mtime": 1588486752629.2952
+      },
+      {
+        "file": "apps/demo/src/app/marble-diagram/marble-diagram.component.ts",
+        "ext": ".ts",
+        "mtime": 1588258810634.3728
+      },
+      {
         "file": "apps/demo/src/app/observables-page/observables-page.component.html",
         "ext": ".html",
-        "mtime": 1588084720977.8528
+        "mtime": 1588258931614.7537
       },
       {
         "file": "apps/demo/src/app/observables-page/observables-page.component.scss",
         "ext": ".scss",
-        "mtime": 1587891825720.7454
+        "mtime": 1588310927794.6067
       },
       {
         "file": "apps/demo/src/app/observables-page/observables-page.component.spec.ts",
@@ -892,12 +988,12 @@
       {
         "file": "apps/demo/src/app/observables-page/observables-page.component.ts",
         "ext": ".ts",
-        "mtime": 1588084777557.7244
+        "mtime": 1588255136518.3662
       },
       {
         "file": "apps/demo/src/app/operators-page/operators-page.component.html",
         "ext": ".html",
-        "mtime": 1588086926877.4656
+        "mtime": 1588493258514.4685
       },
       {
         "file": "apps/demo/src/app/operators-page/operators-page.component.scss",
@@ -912,17 +1008,17 @@
       {
         "file": "apps/demo/src/app/operators-page/operators-page.component.ts",
         "ext": ".ts",
-        "mtime": 1588086956400.525
+        "mtime": 1588609692382.311
       },
       {
         "file": "apps/demo/src/app/subjects-page/subjects-page.component.html",
         "ext": ".html",
-        "mtime": 1588084739903.4094
+        "mtime": 1588259034726.5613
       },
       {
         "file": "apps/demo/src/app/subjects-page/subjects-page.component.scss",
         "ext": ".scss",
-        "mtime": 1587820589052.9998
+        "mtime": 1588259024455.4153
       },
       {
         "file": "apps/demo/src/app/subjects-page/subjects-page.component.spec.ts",
@@ -932,7 +1028,7 @@
       {
         "file": "apps/demo/src/app/subjects-page/subjects-page.component.ts",
         "ext": ".ts",
-        "mtime": 1588084651662.245
+        "mtime": 1588258672618.9343
       },
       {
         "file": "apps/demo/src/app/welcome-page/welcome-page.component.html",
@@ -955,24 +1051,79 @@
         "mtime": 1587714095930.1355
       },
       {
+        "file": "apps/demo/src/assets/combine-latest.svg",
+        "ext": ".svg",
+        "mtime": 1588490179058.7075
+      },
+      {
+        "file": "apps/demo/src/assets/debounce.svg",
+        "ext": ".svg",
+        "mtime": 1588492088917.647
+      },
+      {
+        "file": "apps/demo/src/assets/distinct.svg",
+        "ext": ".svg",
+        "mtime": 1588492460831.478
+      },
+      {
         "file": "apps/demo/src/assets/favicon.png",
         "ext": ".png",
         "mtime": 1587816289421.9243
       },
       {
+        "file": "apps/demo/src/assets/filter.svg",
+        "ext": ".svg",
+        "mtime": 1588492774803.0454
+      },
+      {
+        "file": "apps/demo/src/assets/from.svg",
+        "ext": ".svg",
+        "mtime": 1588490977868.7068
+      },
+      {
+        "file": "apps/demo/src/assets/hot-cold.svg",
+        "ext": ".svg",
+        "mtime": 1588257828519.1714
+      },
+      {
+        "file": "apps/demo/src/assets/merge.svg",
+        "ext": ".svg",
+        "mtime": 1588489241427.9292
+      },
+      {
+        "file": "apps/demo/src/assets/of.svg",
+        "ext": ".svg",
+        "mtime": 1588491536977.026
+      },
+      {
+        "file": "apps/demo/src/assets/subject.svg",
+        "ext": ".svg",
+        "mtime": 1588258553847.7083
+      },
+      {
+        "file": "apps/demo/src/assets/take.svg",
+        "ext": ".svg",
+        "mtime": 1588493246180.7756
+      },
+      {
         "file": "apps/demo/src/assets/timer-delay.svg",
         "ext": ".svg",
-        "mtime": 1587892043662.726
+        "mtime": 1588256627397.255
       },
       {
         "file": "apps/demo/src/assets/timer-error.svg",
         "ext": ".svg",
-        "mtime": 1587892411907.712
+        "mtime": 1588259092330.6423
       },
       {
         "file": "apps/demo/src/assets/timer-immediate.svg",
         "ext": ".svg",
-        "mtime": 1587891662634.7156
+        "mtime": 1588256590342.8083
+      },
+      {
+        "file": "apps/demo/src/assets/with-latest-from.svg",
+        "ext": ".svg",
+        "mtime": 1588490428701.0254
       },
       {
         "file": "apps/demo/src/environments/environment.prod.ts",
@@ -1007,7 +1158,7 @@
       {
         "file": "apps/demo/src/styles.scss",
         "ext": ".scss",
-        "mtime": 1587750242783.2463
+        "mtime": 1588486807558.2622
       },
       {
         "file": "apps/demo/src/test-setup.ts",

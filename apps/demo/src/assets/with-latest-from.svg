@@ -1,318 +1,105 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   id="svg1557"
-   version="1.1"
-   viewBox="0 0 238.63977 58.83263"
-   height="58.83263mm"
-   width="238.63977mm">
-  <defs
-     id="defs1551" />
-  <metadata
-     id="metadata1554">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     transform="translate(14.743476,15.963409)"
-     id="layer1">
-    <path
-       id="path5096-4"
-       d="M 34.982869,-10.716479 H 223.81633"
-       style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <g
-       id="g215"
-       transform="translate(42.469207,-39.055972)">
-      <ellipse
-         style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1"
-         cy="28.072218"
-         cx="20.811733"
-         id="path10-5"
-         rx="4.8295503"
-         ry="4.8044934" />
-      <text
-         id="text4992-3-9-1"
-         y="30.952312"
-         x="18.291645"
-         style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="font-size:7.76111126px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
-           y="30.952312"
-           x="18.291645"
-           id="tspan4990-1-4-8">C</tspan></text>
-    </g>
-    <text
-       id="text1805"
-       y="10.260071"
-       x="-14.743476"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       xml:space="preserve"><tspan
-         style="font-size:7.76111126px;stroke-width:0.26458332"
-         y="10.260071"
-         x="-14.743476"
-         id="tspan1803">Timer$</tspan></text>
-    <text
-       id="text1805-9"
-       y="-8.593586"
-       x="-14.743476"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       xml:space="preserve"><tspan
-         style="font-size:7.76111126px;stroke-width:0.26458332"
-         y="-8.593586"
-         x="-14.743476"
-         id="tspan1803-6">Click$</tspan></text>
-    <path
-       id="path5384-97"
-       d="m 219.07964,-14.310049 4.73669,3.59357"
-       style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       id="path5384-9-6"
-       d="m 223.81633,-10.716479 -4.73669,3.5935681"
-       style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       id="path5096-4-6"
-       d="M 34.982859,35.159506 H 223.81633"
-       style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       id="path5384-97-7"
-       d="m 219.07964,31.565946 4.73669,3.59356"
-       style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       id="path5384-9-6-6"
-       d="m 223.81633,35.159506 -4.73669,3.59357"
-       style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <text
-       id="text1805-9-2"
-       y="36.653488"
-       x="-14.743476"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       xml:space="preserve"><tspan
-         style="font-size:7.76111126px;stroke-width:0.26458332"
-         y="36.653488"
-         x="-14.743476"
-         id="tspan1803-6-1">Merged</tspan></text>
-    <g
-       transform="translate(358.95708,-3.7083931)"
-       id="g180">
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m -324.26623,11.25 h 188.83346"
-         id="path5096" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M -140.16946,7.6564299 -135.43277,11.25"
-         id="path5384" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m -135.43277,11.25 -4.73669,3.59357"
-         id="path5384-9" />
-    </g>
-    <g
-       id="g215-9"
-       transform="translate(123.48773,-20.765525)">
-      <ellipse
-         style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1"
-         cy="28.072218"
-         cx="20.811733"
-         id="path10-5-9"
-         rx="4.8295503"
-         ry="4.8044934" />
-      <text
-         id="text4992-3-9-1-1"
-         y="30.952312"
-         x="18.291645"
-         style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="font-size:7.76111126px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
-           y="30.952312"
-           x="18.291645"
-           id="tspan4990-1-4-8-30">1</tspan></text>
-    </g>
-    <g
-       id="g279"
-       transform="translate(139.16243,-7.3450932)">
-      <ellipse
-         style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1"
-         cy="14.651788"
-         cx="41.104912"
-         id="path10-5-6"
-         rx="4.8295503"
-         ry="4.8044934" />
-      <text
-         id="text4992-3-9-1-3"
-         y="17.531883"
-         x="38.584824"
-         style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="font-size:7.76111126px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
-           y="17.531883"
-           x="38.584824"
-           id="tspan4990-1-4-8-3">2</tspan></text>
-    </g>
-    <g
-       id="g492"
-       transform="translate(64.013818,-46.749114)">
-      <ellipse
-         style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1"
-         cy="54.055805"
-         cx="44.317707"
-         id="path10-5-1"
-         rx="4.8295503"
-         ry="4.8044934" />
-      <text
-         id="text4992-3-9-1-9"
-         y="56.935898"
-         x="41.797619"
-         style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="font-size:7.76111126px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
-           y="56.935898"
-           x="41.797619"
-           id="tspan4990-1-4-8-6">0</tspan></text>
-    </g>
-    <g
-       id="g215-4"
-       transform="translate(67.387211,-38.526196)">
-      <ellipse
-         style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1"
-         cy="28.072218"
-         cx="20.811733"
-         id="path10-5-4"
-         rx="4.8295503"
-         ry="4.8044934" />
-      <text
-         id="text4992-3-9-1-4"
-         y="30.952312"
-         x="18.291645"
-         style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="font-size:7.76111126px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
-           y="30.952312"
-           x="18.291645"
-           id="tspan4990-1-4-8-5">C</tspan></text>
-    </g>
-    <g
-       id="g215-4-7"
-       transform="translate(112.0427,-38.258927)">
-      <ellipse
-         style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1"
-         cy="28.072218"
-         cx="20.811733"
-         id="path10-5-4-9"
-         rx="4.8295503"
-         ry="4.8044934" />
-      <text
-         id="text4992-3-9-1-4-2"
-         y="30.952312"
-         x="18.291645"
-         style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="font-size:7.76111126px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
-           y="30.952312"
-           x="18.291645"
-           id="tspan4990-1-4-8-5-4">C</tspan></text>
-    </g>
-    <g
-       transform="translate(91.186757,-19.144518)"
-       id="g492-3-5-0">
-      <circle
-         r="7"
-         id="path10-5-1-4-8-8"
-         cx="44.317707"
-         cy="54.055805"
-         style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="42.52277"
-         y="52.709373"
-         id="text4992-3-9-1-9-6-3-0"><tspan
-           id="tspan4990-1-4-8-6-2-1-7"
-           x="42.52277"
-           y="52.709373"
-           style="font-size:5.64444447px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332">0</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:12px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="40.518925"
-         y="58.914326"
-         id="text4992-3-9-1-9-6-3-6-7"><tspan
-           id="tspan4990-1-4-8-6-2-1-9-6"
-           x="40.518925"
-           y="58.914326"
-           style="font-size:5.64444447px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332">3C</tspan></text>
-    </g>
-    <g
-       transform="translate(153.62843,6.2932854)"
-       id="g492-3-5-0-5-1">
-      <circle
-         r="7"
-         id="path10-5-1-4-8-8-5-8"
-         cx="44.317707"
-         cy="28.655781"
-         style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="42.52277"
-         y="27.309349"
-         id="text4992-3-9-1-9-6-3-0-8-7"><tspan
-           id="tspan4990-1-4-8-6-2-1-7-7-9"
-           x="42.52277"
-           y="27.309349"
-           style="font-size:5.64444447px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332">2</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:12px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="40.518925"
-         y="33.514301"
-         id="text4992-3-9-1-9-6-3-6-7-0-2"><tspan
-           id="tspan4990-1-4-8-6-2-1-9-6-6-7"
-           x="40.518925"
-           y="33.514301"
-           style="font-size:5.64444447px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332">4C</tspan></text>
-      <flowRoot
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-         id="flowRoot2116-5-2"
-         xml:space="preserve"><flowRegion
-           id="flowRegion2118-1-2"><rect
-             y="286.80539"
-             x="478.57144"
-             height="90.714287"
-             width="83.571426"
-             id="rect2120-6-6" /></flowRegion><flowPara
-           id="flowPara2122-7-1" /></flowRoot>    </g>
-    <g
-       id="g215-4-7-2"
-       transform="translate(175.5091,-39.047237)">
-      <ellipse
-         style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1"
-         cy="28.072218"
-         cx="20.811733"
-         id="path10-5-4-9-7"
-         rx="4.8295503"
-         ry="4.8044934" />
-      <text
-         id="text4992-3-9-1-4-2-7"
-         y="30.952312"
-         x="18.291645"
-         style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="font-size:7.76111126px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
-           y="30.952312"
-           x="18.291645"
-           id="tspan4990-1-4-8-5-4-7">C</tspan></text>
-    </g>
-  </g>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" 
+   xmlns:cc="http://creativecommons.org/ns#" 
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+   xmlns:svg="http://www.w3.org/2000/svg" 
+   xmlns="http://www.w3.org/2000/svg" id="svg1557" version="1.1" viewBox="0 0 238.63977 58.83263" height="58.83263mm" width="238.63977mm">
+   <defs id="defs1551" />
+   <metadata id="metadata1554">
+      <rdf:RDF>
+         <cc:Work rdf:about="">
+            <dc:format>image/svg+xml</dc:format>
+            <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+            <dc:title></dc:title>
+         </cc:Work>
+      </rdf:RDF>
+   </metadata>
+   <g transform="translate(14.743476,15.963409)" id="layer1">
+      <path id="path5096-4" d="M 34.982869,-10.716479 H 223.81633" style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <g id="g215" transform="translate(42.469207,-39.055972)">
+         <ellipse style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1" cy="28.072218" cx="20.811733" id="path10-5" rx="4.8295503" ry="4.8044934" />
+         <text id="text4992-3-9-1" y="30.952312" x="18.291645" style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332" xml:space="preserve">
+            <tspan style="font-size:7.76111126px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332" y="30.952312" x="18.291645" id="tspan4990-1-4-8">C</tspan>
+         </text>
+      </g>
+      <text id="text1805" y="10.260071" x="-14.743476" style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332" xml:space="preserve">
+         <tspan style="font-size:7.76111126px;stroke-width:0.26458332" y="10.260071" x="-14.743476" id="tspan1803">Timer$</tspan>
+      </text>
+      <text id="text1805-9" y="-8.593586" x="-14.743476" style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332" xml:space="preserve">
+         <tspan style="font-size:7.76111126px;stroke-width:0.26458332" y="-8.593586" x="-14.743476" id="tspan1803-6">Click$</tspan>
+      </text>
+      <path id="path5384-97" d="m 219.07964,-14.310049 4.73669,3.59357" style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path id="path5384-9-6" d="m 223.81633,-10.716479 -4.73669,3.5935681" style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path id="path5096-4-6" d="M 34.982859,35.159506 H 223.81633" style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path id="path5384-97-7" d="m 219.07964,31.565946 4.73669,3.59356" style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path id="path5384-9-6-6" d="m 223.81633,35.159506 -4.73669,3.59357" style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text id="text1805-9-2" y="36.653488" x="-14.743476" style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332" xml:space="preserve">
+         <tspan style="font-size:7.76111126px;stroke-width:0.26458332" y="36.653488" x="-14.743476" id="tspan1803-6-1">LatestFrom</tspan>
+      </text>
+      <g transform="translate(358.95708,-3.7083931)" id="g180">
+         <path style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m -324.26623,11.25 h 188.83346" id="path5096" />
+         <path style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M -140.16946,7.6564299 -135.43277,11.25" id="path5384" />
+         <path style="fill:none;stroke:#000000;stroke-width:0.26458329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m -135.43277,11.25 -4.73669,3.59357" id="path5384-9" />
+      </g>
+      <g id="g215-9" transform="translate(123.48773,-20.765525)">
+         <ellipse style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1" cy="28.072218" cx="20.811733" id="path10-5-9" rx="4.8295503" ry="4.8044934" />
+         <text id="text4992-3-9-1-1" y="30.952312" x="18.291645" style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332" xml:space="preserve">
+            <tspan style="font-size:7.76111126px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332" y="30.952312" x="18.291645" id="tspan4990-1-4-8-30">1</tspan>
+         </text>
+      </g>
+      <g id="g279" transform="translate(139.16243,-7.3450932)">
+         <ellipse style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1" cy="14.651788" cx="41.104912" id="path10-5-6" rx="4.8295503" ry="4.8044934" />
+         <text id="text4992-3-9-1-3" y="17.531883" x="38.584824" style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332" xml:space="preserve">
+            <tspan style="font-size:7.76111126px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332" y="17.531883" x="38.584824" id="tspan4990-1-4-8-3">2</tspan>
+         </text>
+      </g>
+      <g id="g492" transform="translate(64.013818,-46.749114)">
+         <ellipse style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1" cy="54.055805" cx="44.317707" id="path10-5-1" rx="4.8295503" ry="4.8044934" />
+         <text id="text4992-3-9-1-9" y="56.935898" x="41.797619" style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332" xml:space="preserve">
+            <tspan style="font-size:7.76111126px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332" y="56.935898" x="41.797619" id="tspan4990-1-4-8-6">0</tspan>
+         </text>
+      </g>
+      <g id="g215-4" transform="translate(67.387211,-38.526196)">
+         <ellipse style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1" cy="28.072218" cx="20.811733" id="path10-5-4" rx="4.8295503" ry="4.8044934" />
+         <text id="text4992-3-9-1-4" y="30.952312" x="18.291645" style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332" xml:space="preserve">
+            <tspan style="font-size:7.76111126px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332" y="30.952312" x="18.291645" id="tspan4990-1-4-8-5">C</tspan>
+         </text>
+      </g>
+      <g id="g215-4-7" transform="translate(112.0427,-38.258927)">
+         <ellipse style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1" cy="28.072218" cx="20.811733" id="path10-5-4-9" rx="4.8295503" ry="4.8044934" />
+         <text id="text4992-3-9-1-4-2" y="30.952312" x="18.291645" style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332" xml:space="preserve">
+            <tspan style="font-size:7.76111126px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332" y="30.952312" x="18.291645" id="tspan4990-1-4-8-5-4">C</tspan>
+         </text>
+      </g>
+      <g transform="translate(91.186757,-19.144518)" id="g492-3-5-0">
+         <circle r="7" id="path10-5-1-4-8-8" cx="44.317707" cy="54.055805" style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1" />
+         <text xml:space="preserve" style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332" x="42.52277" y="52.709373" id="text4992-3-9-1-9-6-3-0">
+            <tspan id="tspan4990-1-4-8-6-2-1-7" x="42.52277" y="52.709373" style="font-size:5.64444447px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332">0</tspan>
+         </text>
+         <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:12px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332" x="40.518925" y="58.914326" id="text4992-3-9-1-9-6-3-6-7">
+            <tspan id="tspan4990-1-4-8-6-2-1-9-6" x="40.518925" y="58.914326" style="font-size:5.64444447px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332">3C</tspan>
+         </text>
+      </g>
+      <g transform="translate(153.62843,6.2932854)" id="g492-3-5-0-5-1">
+         <circle r="7" id="path10-5-1-4-8-8-5-8" cx="44.317707" cy="28.655781" style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1" />
+         <text xml:space="preserve" style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332" x="42.52277" y="27.309349" id="text4992-3-9-1-9-6-3-0-8-7">
+            <tspan id="tspan4990-1-4-8-6-2-1-7-7-9" x="42.52277" y="27.309349" style="font-size:5.64444447px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332">2</tspan>
+         </text>
+         <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:12px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332" x="40.518925" y="33.514301" id="text4992-3-9-1-9-6-3-6-7-0-2">
+            <tspan id="tspan4990-1-4-8-6-2-1-9-6-6-7" x="40.518925" y="33.514301" style="font-size:5.64444447px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332">4C</tspan>
+         </text>
+         <flowRoot style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none" id="flowRoot2116-5-2" xml:space="preserve">
+            <flowRegion id="flowRegion2118-1-2">
+               <rect y="286.80539" x="478.57144" height="90.714287" width="83.571426" id="rect2120-6-6" />
+            </flowRegion>
+            <flowPara id="flowPara2122-7-1" />
+         </flowRoot>
+      </g>
+      <g id="g215-4-7-2" transform="translate(175.5091,-39.047237)">
+         <ellipse style="fill:#fb8810;fill-opacity:1;stroke:#000000;stroke-width:0.35032225;stroke-opacity:1" cy="28.072218" cx="20.811733" id="path10-5-4-9-7" rx="4.8295503" ry="4.8044934" />
+         <text id="text4992-3-9-1-4-2-7" y="30.952312" x="18.291645" style="font-style:normal;font-weight:normal;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332" xml:space="preserve">
+            <tspan style="font-size:7.76111126px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332" y="30.952312" x="18.291645" id="tspan4990-1-4-8-5-4-7">C</tspan>
+         </text>
+      </g>
+   </g>
 </svg>
