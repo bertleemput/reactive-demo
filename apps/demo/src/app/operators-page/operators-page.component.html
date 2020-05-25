@@ -5,6 +5,29 @@
 <mat-expansion-panel>
   <mat-expansion-panel-header>
     <mat-panel-title>
+      Merge
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <section>
+    <p>Merge merges multiple observable into a single observable</p>
+
+    <pre>
+      <code reactiveDemoCodeBlock class="typescript">{{ mergeDemoCode }}</code>
+    </pre>
+
+    <reactive-demo-marble-diagram
+      [diagram]="'merge.svg'"
+    ></reactive-demo-marble-diagram>
+
+    <button mat-raised-button (click)="startMergeDemo()">Start</button>
+    <button mat-raised-button (click)="stop()">Stop</button>
+  </section>
+</mat-expansion-panel>
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
       CombineLatest
     </mat-panel-title>
   </mat-expansion-panel-header>
@@ -26,29 +49,6 @@
     ></reactive-demo-marble-diagram>
 
     <button mat-raised-button (click)="startCombineLatestDemo()">Start</button>
-    <button mat-raised-button (click)="stop()">Stop</button>
-  </section>
-</mat-expansion-panel>
-
-<mat-expansion-panel>
-  <mat-expansion-panel-header>
-    <mat-panel-title>
-      Merge
-    </mat-panel-title>
-  </mat-expansion-panel-header>
-
-  <section>
-    <p>Merge merges multiple observable into a single observable</p>
-
-    <pre>
-      <code reactiveDemoCodeBlock class="typescript">{{ mergeDemoCode }}</code>
-    </pre>
-
-    <reactive-demo-marble-diagram
-      [diagram]="'merge.svg'"
-    ></reactive-demo-marble-diagram>
-
-    <button mat-raised-button (click)="startMergeDemo()">Start</button>
     <button mat-raised-button (click)="stop()">Stop</button>
   </section>
 </mat-expansion-panel>
